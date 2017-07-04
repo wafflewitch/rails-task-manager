@@ -1,0 +1,5 @@
+<h2><%= @task.name %></h2>
+<ul>
+  <li>Description: <%= @task.desc %></li>
+  <li><%= link_to "Edit Task", edit_task_path(@task) %></li>
+</ul>
