@@ -1,5 +1,6 @@
 <h2><%= @task.name %></h2>
 <ul>
   <li>Description: <%= @task.desc %></li>
-  <li><%= link_to "Edit Task", edit_task_path(@task) %></li>
+  <%= link_to "edit task", edit_task_path(@task) %>&nbsp; |&nbsp;
+  <%= link_to "remove task", task_path(@task), method: :delete %>
 </ul>

@@ -3,6 +3,9 @@
     <h2><%= link_to task.name, task_path(task.id) %></h2>
     <ul>
       <li>Description: <%= task.desc %></li>
+      <%= link_to "edit task", edit_task_path(task) %>&nbsp; |&nbsp;
       <%= link_to "remove task", task_path(task), method: :delete %>
     </ul>
   <% end %>
+  <br>
+  <p><%= link_to "add a new task", new_task_path %></p>
